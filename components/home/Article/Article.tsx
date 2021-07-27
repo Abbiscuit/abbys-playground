@@ -23,8 +23,8 @@ const Article = () => {
 
         <div className={s.buttonContainer}>
           <Button>Button</Button>
-          <Button variant="ghost">Button</Button>
-          <Button variant="primary">Button</Button>
+          <Button variant="ghost">Nah</Button>
+          <Button variant="primary">Favorite</Button>
         </div>
       </section>
     </article>
