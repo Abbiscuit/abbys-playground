@@ -1,0 +1,27 @@
+.article {
+  padding: 16px;
+  background-color: #fafafa;
+
+  .section {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+
+    .title {
+      font-size: 32px;
+      margin: 0;
+      line-height: 1.2;
+    }
+
+    .description {
+      margin: 0;
+      line-height: 1.4;
+    }
+
+    .buttonContainer {
+      display: flex;
+      flex-direction: row;
+      gap: 12px;
+    }
+  }
+}
