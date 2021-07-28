@@ -1,2 +1,29 @@
 .postContainer {
+  padding: 16px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.17);
+  position: relative;
+
+  h3 {
+    font-size: 20px;
+    margin: 0;
+    margin-bottom: 16px;
+  }
+
+  .span {
+    font-size: 12px;
+    display: block;
+  }
+
+  .favIcon {
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    z-index: 1;
+    width: 24px;
+    height: 24px;
+  }
+
+  .filled {
+    color: goldenrod;
+  }
 }
