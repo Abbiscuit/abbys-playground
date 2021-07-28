@@ -9,7 +9,7 @@ type ButtonProps = Readonly<JSX.IntrinsicElements['button']> & {
   readonly as: string;
   readonly className: string;
   readonly href: string;
-  readonly variant: 'ghost' | 'primary';
+  readonly variant: 'ghost' | 'primary' | 'inverted';
   readonly active: boolean;
 };
 
@@ -32,6 +32,7 @@ const Button = forwardRef<HTMLElement, Partial<ButtonProps>>((props, ref) => {
         {
           [s.ghost]: variant === 'ghost',
           [s.primary]: variant === 'primary',
+          [s.inverted]: variant === 'inverted',
         },
         className
       ),

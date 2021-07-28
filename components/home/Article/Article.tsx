@@ -18,13 +18,17 @@ const Article = () => {
         </Typography>
 
         <Typography as="p" className={s.description}>
-          Why are you so serious??
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officiis ut,
+          odio error corrupti modi voluptatibus facere blanditiis ad aspernatur
+          labore in itaque reiciendis inventore enim, pariatur perferendis
+          vitae, dolor a.
         </Typography>
 
         <div className={s.buttonContainer}>
           <Button>Button</Button>
           <Button variant="ghost">Nah</Button>
           <Button variant="primary">Favorite</Button>
+          <Button variant="inverted">Inverted</Button>
         </div>
       </section>
     </article>
