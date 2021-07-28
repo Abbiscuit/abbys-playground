@@ -1,18 +1,21 @@
 import cn from 'classnames';
 import React from 'react';
 import Button from '../../ui/Button/Button';
+import Card from '../../ui/Card/Card';
 import Typography from '../../ui/Typography/Typography';
 
 import s from './Article.module.scss';
 
 const Article = () => {
+  const cardRef = React.useRef<HTMLDivElement>(null);
+  const myRef = React.createRef<HTMLDivElement>();
+
   return (
     <article className={cn(s.article)}>
       <Typography as="span" className={s.prologue}>
         Prologue
       </Typography>
-
-      <section className={s.section}>
+      <Card ref={cardRef} as="div" className={s.section}>
         <Typography as="h2" className={s.title}>
           Section Title
         </Typography>
@@ -30,7 +33,9 @@ const Article = () => {
           <Button variant="primary">Favorite</Button>
           <Button variant="inverted">Inverted</Button>
         </div>
-      </section>
+      </Card>
+
+      <div ref={myRef}></div>
     </article>
   );
 };

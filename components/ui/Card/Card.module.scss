@@ -1,0 +1,21 @@
+.base {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.sm {
+  padding: 4px;
+}
+
+.md {
+  padding: 8px;
+}
+
+.lg {
+  padding: 16px;
+}
+
+.xl {
+  padding: 24px;
+}
