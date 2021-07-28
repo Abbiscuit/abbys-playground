@@ -24,4 +24,4 @@ const Feed = () => {
   );
 };
 
-export default Feed;
+export default React.memo(Feed);
