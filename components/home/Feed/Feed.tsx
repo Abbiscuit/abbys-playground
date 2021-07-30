@@ -9,6 +9,7 @@ import s from './Feed.module.scss';
 
 const Feed = () => {
   const { data, error } = useSWR<{ allPosts: Post[] }>('api/feed', fetcher);
+  console.log('Feed...');
 
   if (!data) return <p>Fetching now...</p>;
   if (error) return <p>{error.message}</p>;
@@ -24,4 +25,4 @@ const Feed = () => {
   );
 };
 
-export default React.memo(Feed);
+export default Feed;

@@ -10,6 +10,7 @@ interface PostProps {
 }
 
 const PostItem = ({ post: p }: PostProps): JSX.Element => {
+  console.log('PostItem...');
   return (
     <div className={s.postContainer}>
       <h3>{p.title}</h3>
@@ -20,4 +21,4 @@ const PostItem = ({ post: p }: PostProps): JSX.Element => {
   );
 };
 
-export default PostItem;
+export default React.memo(PostItem);
