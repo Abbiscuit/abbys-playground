@@ -1,4 +1,5 @@
 import React from 'react';
+import AvatarCard from '../components/common/AvatarCard/AvatarCard';
 import Article from '../components/home/Article/Article';
 import Feed from '../components/home/Feed/Feed';
 import CountProvider, { useCount } from '../context/CountProvider';
@@ -11,6 +12,7 @@ const HomePage = () => {
       <CountProvider>
         <Article />
         <Test />
+        <AvatarCard mode="horizontal" />
       </CountProvider>
     </section>
   );
