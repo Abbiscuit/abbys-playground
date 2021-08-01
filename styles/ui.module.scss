@@ -1,0 +1,19 @@
+.uiPage {
+  padding: 16px;
+
+  .cardLayout {
+    display: flex;
+    gap: 16px;
+
+    .leftPanel {
+      width: 40%;
+    }
+
+    .rightPanel {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+      width: 60%;
+    }
+  }
+}

@@ -1,6 +1,8 @@
 import { ReactNode, forwardRef, createElement } from 'react';
 import cn from 'classnames';
 
+import s from './Typography.module.scss';
+
 type TypographyProps = JSX.IntrinsicElements['p'] & {
   readonly children: ReactNode;
   readonly as: string;
