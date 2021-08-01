@@ -1,0 +1,26 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  background-color: #333;
+
+  width: 500px;
+  height: 500px;
+
+  /* layout */
+  .innerContainer {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 32px;
+    height: 100%;
+
+    /* layout */
+    .positionCircle {
+      position: absolute;
+      bottom: 24px;
+      right: 24px;
+    }
+  }
+}

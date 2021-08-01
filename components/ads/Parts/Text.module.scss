@@ -1,0 +1,19 @@
+/* element */
+.textContainer {
+  .title {
+    font-size: 72px;
+    line-height: 1.2;
+    text-align: center;
+    color: #1a1a1a;
+    text-shadow: 4px 2px 0px rgba(255, 255, 255, 1);
+    transform: rotate(-4deg);
+  }
+
+  .date {
+    font-size: 24px;
+    font-weight: 700;
+    text-align: center;
+    color: rgb(235, 33, 67);
+    text-shadow: 1px 1px 0px rgba(255, 255, 255, 1);
+  }
+}
